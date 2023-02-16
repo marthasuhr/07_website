@@ -1,1 +1,32 @@
-/*** denne css er til styling, som gælder på alle sider
+/*** denne css er til styling, som gælder på alle sider ***/
+
+/***** RESET *****/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "quicksand", sans-serif;
+  color: var(--farve2);
+}
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/***** FARVER *****/
+
+html {
+  --farve1: #231f20;
+  --farve2: #ffffff;
+}
+
+/***** GENEREL *****/
+
+body {
+  margin-inline: 250px;
+  background-color: var(--farve1);
+}
