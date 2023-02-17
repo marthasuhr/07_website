@@ -1,0 +1,23 @@
+form {
+  padding: 2rem;
+  border-radius: 8px;
+  gap: 1rem;
+  display: grid;
+}
+
+label,
+input,
+textarea,
+select,
+button {
+  display: block;
+}
+
+.form-felt {
+  display: grid;
+  gap: 3px;
+}
+
+button {
+  padding: 0.5rem;
+}

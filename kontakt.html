@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <link rel="stylesheet" href="css/generel.css">
+    <link rel="stylesheet" href="css/kontakt.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <title>Contact</title>
+</head>
+
+<body>
+
+    <section>
+        <header>
+            <h2>Contact us</h2>
+            <p>
+                Do you have album recommendations? Fill out this form, and we'll get back to you ASAP.
+            </p>
+        </header>
+
+        <form action="kontakt.html" name="contact" netlify>
+            <!-- Formular-indhold -->
+            <div class="form-felt">
+                <label for="fornavn">First Name</label>
+                <input placeholder="Britny" id="fornavn" name="fornavn" type="text" required>
+            </div>
+            <div class="form-felt">
+                <label for="efternavn">Last Name</label>
+                <input placeholder="Spares" id="efternavn" name="efternavn" type="text" required>
+            </div>
+            <div class="form-felt">
+                <label for="email">E-mail</label>
+                <input placeholder="britny_spares@email.com" id="email" name="email" type="email" required>
+            </div>
+            <label class="form-felt">
+                Message
+                <textarea placeholder="What's on your mind?" name="besked" rows="5"></textarea>
+            </label>
+            <div class="form-felt">
+                <input type="checkbox" id="subscribe" name="subscribe" value="subscribe">
+                <label for="subscribe">Subscribe to our newsletter</label>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+</body>
+
+</html>
