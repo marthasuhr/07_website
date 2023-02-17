@@ -1,8 +1,11 @@
 form {
-  padding: 2rem;
+  padding: 1rem;
   border-radius: 8px;
-  gap: 1rem;
+  gap: 1.5rem;
   display: grid;
+  max-width: 350px;
+  background-color: var(--lighter);
+  margin-top: 1rem;
 }
 
 label,
@@ -11,13 +14,45 @@ textarea,
 select,
 button {
   display: block;
+  border-radius: 5px;
+  border: 1px;
 }
 
 .form-felt {
   display: grid;
   gap: 3px;
+  font-family: "quicksand";
 }
 
 button {
   padding: 0.5rem;
+  background-color: var(--knapfarve);
+  color: var(--farve2);
+  margin-inline: 5rem;
+  font-size: 15px;
+}
+
+.subscribe {
+  display: flex;
+  gap: 10px;
+}
+
+input,
+textarea {
+  padding: 0.5rem;
+}
+
+::placeholder {
+  font-family: "quicksand";
+}
+
+main {
+  max-width: 350px;
+  margin: auto;
+}
+
+@media (min-width: 800px) {
+  form {
+    padding: 2rem;
+  }
 }

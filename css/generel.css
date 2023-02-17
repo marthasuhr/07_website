@@ -22,11 +22,19 @@ img {
 html {
   --farve1: #231f20;
   --farve2: #ffffff;
+  --knapfarve: #ad4c38;
+  --lighter: #2c292a;
 }
 
 /***** GENEREL *****/
 
 body {
-  margin-inline: 250px;
+  margin-inline: 10px;
   background-color: var(--farve1);
+}
+
+@media (min-width: 800px) {
+  body {
+    margin-inline: 250px;
+  }
 }
