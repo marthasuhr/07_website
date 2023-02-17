@@ -16,12 +16,12 @@ button {
   display: block;
   border-radius: 5px;
   border: 1px;
+  font-family: "quicksand";
 }
 
 .form-felt {
   display: grid;
   gap: 3px;
-  font-family: "quicksand";
 }
 
 button {

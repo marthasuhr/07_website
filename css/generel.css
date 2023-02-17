@@ -29,12 +29,126 @@ html {
 /***** GENEREL *****/
 
 body {
-  margin-inline: 10px;
   background-color: var(--farve1);
+}
+main {
+  margin-inline: 10px;
 }
 
 @media (min-width: 800px) {
-  body {
+  main {
     margin-inline: 250px;
+  }
+}
+
+/***** BURGERMENU *****/
+header {
+  position: sticky;
+  top: 0;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  background-color: var(--lighter);
+  z-index: 1;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+}
+
+header a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--farve2);
+  font-family: "quicksand";
+  padding: 0.5rem;
+  font-size: 15px;
+  margin-bottom: 0;
+}
+
+nav ul li a {
+  color: var(--farve2);
+  font-size: 15px;
+}
+
+header a:hover {
+  color: var(--knapfarve);
+}
+.navbar {
+  min-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav_menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav_branding {
+  font-size: 2rem;
+}
+
+.nav_link {
+  transition: 0.7s ease;
+}
+
+.nav_link:hover {
+  color: var(--knapfarve);
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 30px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: var(--farve2);
+  border-radius: 5px;
+}
+
+@media (max-width: 1000px) {
+  .hamburger {
+    display: block;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .nav_menu {
+    position: fixed;
+    left: 0%;
+    top: -100%;
+    gap: 0;
+    flex-direction: column;
+    background-color: var(--lighter);
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+  }
+
+  .nav_item {
+    padding: 2rem;
+    font-size: 30px;
+  }
+
+  .nav_menu.active {
+    top: 7%;
   }
 }
