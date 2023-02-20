@@ -23,7 +23,7 @@ async function hentData() {
 }
 
 // const main gør at elementerne kommer i et grid.
-const main = document.querySelector("div");
+const main = document.querySelector(".albumliste_grid");
 const template = document.querySelector("#minTemplate").content;
 
 function vis(json) {
