@@ -1,0 +1,36 @@
+/******************* Overordnet grid **************************/
+.albumliste_grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.album {
+  display: grid;
+  background-color: #2c292a;
+  border-radius: 0.5rem;
+}
+
+img {
+  border-radius: 0.5rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+.album:hover {
+  background-color: #514e4f;
+}
+
+@media (min-width: 800px) {
+  main {
+    margin-inline: 250px;
+  }
+
+  .albumliste_grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+  }
+}
