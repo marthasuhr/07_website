@@ -18,6 +18,12 @@ img {
   display: block;
 }
 
+.logo {
+  margin-left: 2rem;
+  height: auto;
+  width: 150px;
+}
+
 /***** FARVER *****/
 
 html {
