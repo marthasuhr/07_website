@@ -11,6 +11,7 @@ body {
   font-family: "quicksand", sans-serif;
   color: var(--farve2);
 }
+<<<<<<< HEAD
 /***
 img {
   width: 100%;
@@ -18,6 +19,9 @@ img {
   display: block;
 }
 **/
+=======
+
+>>>>>>> 9376dcb127da20b69ab6177f4238f4cf3d5b8737
 /***** FARVER *****/
 
 html {
