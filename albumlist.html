@@ -9,20 +9,35 @@
     <link rel="stylesheet" href="css/generel.css">
     <link rel="stylesheet" href="css/albumlist.css">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
-    <title>albums</title>
+    <title>Albums</title>
 </head>
 
 <body>
-    <h1>Albums</h1>
+
+
+
+
+
+    <main>
+        <h1>ALBUMS</h1>
+        <a href="album.html">
+            <div class="albumliste_grid"></div>
+        </a>
+    </main>
+
     <template id="minTemplate">
-        <article>
-            <section class="album">
-                <img src="" alt="Billede">
-                <h2>albumtitel</h2>
-                <h3>artist</h3>
-            </section>
+        <article class="album">
+            <img class="billede" src="" alt="Billede">
+            <h2>albumnavn</h2>
+            <h3>artist</h3>
+            <p>year</p>
+
         </article>
     </template>
+
+
+
+    <script src="js/albumlist.js"></script>
 </body>
 
 </html>
