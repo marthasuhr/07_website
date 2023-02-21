@@ -39,6 +39,7 @@ h3 {
   margin-top: 2rem;
   border: none;
   border-radius: 0.5rem;
+  margin-bottom: 5rem;
 }
 
 .view_knap:hover {
@@ -46,7 +47,7 @@ h3 {
 }
 .template_con {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
 }
 
@@ -60,4 +61,16 @@ h3 {
 
 .album:hover {
   background-color: #514e4f;
+}
+
+@media (min-width: 800px) {
+  main {
+    margin-inline: 250px;
+  }
+
+  .template_con {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+  }
 }
