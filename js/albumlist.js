@@ -27,7 +27,6 @@ const main = document.querySelector(".albumliste_grid");
 const template = document.querySelector("#minTemplate").content;
 
 function vis(json) {
-  console.log(json);
   json.forEach((album) => {
     const klon = template.cloneNode(true);
     klon.querySelector("img").src = "" + album.albumcover;
@@ -36,8 +35,9 @@ function vis(json) {
     klon.querySelector("p").textContent = album.year;
 
     //klon.querySelector(".sange").innerHTML = album.songs;
+    console.log(album._id);
 
-    //klon.querySelector("a").href = "album.html?_id=" + album._id;
+    klon.querySelector("a").href = "album.html?id=" + album._id;
 
     main.appendChild(klon);
   });

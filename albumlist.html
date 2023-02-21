@@ -34,23 +34,21 @@
 
     <main>
         <h1>ALBUMS</h1>
-        <a href="album.html">
-            <div class="albumliste_grid"></div>
-        </a>
+
+        <div class="albumliste_grid">
+            <template id="minTemplate">
+
+                <article class="album">
+                    <a href="album.html">
+                        <img class="billede" src="" alt="Billede">
+                        <h2>albumnavn</h2>
+                        <h3>artist</h3>
+                        <p>year</p>
+                    </a>
+                </article>
+            </template>
+        </div>
     </main>
-
-    <template id="minTemplate">
-
-        <article class="album">
-            <img class="billede" src="" alt="Billede">
-            <h2>albumnavn</h2>
-            <h3>artist</h3>
-            <p>year</p>
-
-        </article>
-    </template>
-
-
 
     <script src="js/albumlist.js"></script>
 </body>

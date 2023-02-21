@@ -2,10 +2,10 @@
 const urlParams = new URLSearchParams(window.location.search);
 console.log("urlParams", urlParams);
 //find id
-const id = urlParams.get("_id");
-console.log("_id", id);
+const id = urlParams.get("id");
 
 const url = `https://musicgallery-27fd.restdb.io/rest/albums/${id}`;
+console.log(url);
 
 const options = {
   headers: {
@@ -16,7 +16,7 @@ const options = {
 async function hentData() {
   const respons = await fetch(url, options);
   const json = await respons.json();
-  visAlbum();
+  visAlbum(json);
 }
 
 function visAlbum(album) {
