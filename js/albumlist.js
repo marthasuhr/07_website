@@ -34,6 +34,7 @@ function vis(json) {
     klon.querySelector("h2").textContent = album.album;
     klon.querySelector("h3").textContent = album.artist;
     klon.querySelector("p").textContent = album.year;
+
     //klon.querySelector(".sange").innerHTML = album.songs;
 
     //copy.querySelector("a").href = "album.html?id=" + album.id;
