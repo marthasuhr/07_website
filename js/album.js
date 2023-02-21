@@ -21,7 +21,7 @@ async function hentData() {
 
 function visAlbum(album) {
   console.log(album);
-  document.querySelector("img").src = "" + album.albumcover;
+  document.querySelector(".cover").src = "" + album.albumcover;
   document.querySelector("h1").textContent = album.album;
   document.querySelector("h3").textContent = album.artist + " / " + album.year;
   document.querySelector(".sange").innerHTML = album.songs;
