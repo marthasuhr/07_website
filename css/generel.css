@@ -41,8 +41,19 @@ body {
 main {
   margin-inline: 10px;
 }
+@media (min-width: 600px) {
+  main {
+    margin-inline: 50px;
+  }
+}
 
 @media (min-width: 800px) {
+  main {
+    margin-inline: 150px;
+  }
+}
+
+@media (min-width: 1000px) {
   main {
     margin-inline: 250px;
   }
@@ -126,6 +137,7 @@ header a:hover {
 @media (max-width: 1000px) {
   .hamburger {
     display: block;
+    padding-right: 2rem;
   }
 
   .hamburger.active .bar:nth-child(2) {
@@ -142,16 +154,16 @@ header a:hover {
     position: fixed;
     left: 0%;
     top: -100%;
-    gap: 0;
+    gap: 20px;
     flex-direction: column;
     background-color: var(--lighter);
     width: 100%;
     text-align: center;
     transition: 0.3s;
+    padding-bottom: 30px;
   }
 
   .nav_item {
-    padding: 2rem;
     font-size: 30px;
   }
 
