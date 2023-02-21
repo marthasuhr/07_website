@@ -37,7 +37,7 @@ function vis(json) {
 
     //klon.querySelector(".sange").innerHTML = album.songs;
 
-    //klon.querySelector("a").href = "album.html?_id=" + album.id;
+    //klon.querySelector("a").href = "album.html?_id=" + album._id;
 
     main.appendChild(klon);
   });
