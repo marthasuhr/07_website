@@ -3,8 +3,11 @@
 
 const urlParams = new URLSearchParams(window.location.search);
 const album = urlParams.get("album");
+const cat = urlParams.get("cat");
 
-const url = `https://musicgallery-27fd.restdb.io/rest/albums`;
+document.querySelector("h2").textContent = cat;
+
+const url = `https://musicgallery-27fd.restdb.io/rest/albums?category=${cat}`;
 
 const options = {
   headers: {
