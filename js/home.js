@@ -1,7 +1,7 @@
 const urlParams = new URLSearchParams(window.location.search);
 const album = urlParams.get("album");
 
-const url = "https://musicgallery-27fd.restdb.io/rest/albums?max=8";
+const url = "https://musicgallery-27fd.restdb.io/rest/albums?max=4";
 
 const options = {
   headers: {
