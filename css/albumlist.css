@@ -11,6 +11,7 @@
   border-radius: 0.5rem;
   gap: 0.5rem;
   padding: 1rem;
+  margin-bottom: 5rem;
 }
 
 img {
@@ -26,7 +27,7 @@ a {
 }
 
 h1 {
-  padding-bottom: 1rem;
+  margin-top: 2rem;
   font-weight: lighter;
 }
 
@@ -41,18 +42,26 @@ p {
 
 .genrer {
   display: flex;
+  justify-content: center;
+  gap: 3rem;
 }
 
 .view_knap {
   background-color: #514e4f;
   font-family: "quicksand", sans-serif;
+  text-align: center;
+  width: 100px;
   color: #ffffff;
-  font-size: 1.2rem;
+  font-size: 1rem;
   padding: 0.5rem;
   margin-top: 2rem;
   border: none;
   border-radius: 0.5rem;
   margin-bottom: 2rem;
+}
+
+.view_knap:hover {
+  background-color: #ad4c38;
 }
 
 @media (min-width: 800px) {
@@ -63,5 +72,6 @@ p {
   .albumliste_grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    margin-bottom: 5rem;
   }
 }
