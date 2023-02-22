@@ -10,6 +10,7 @@
 body {
   font-family: "quicksand", sans-serif;
   color: var(--farve2);
+  min-height: 100vh;
 }
 
 img {
