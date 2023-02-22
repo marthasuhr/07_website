@@ -1,17 +1,35 @@
+body {
+  font-weight: lighter;
+}
+
+a {
+  font-family: "quicksand", sans-serif;
+}
+
 .cover {
   border-radius: 7px;
 }
 ul {
   list-style-type: decimal;
-  color: var(--lighter);
+  list-style-position: inside;
+
+  margin-left: 15px;
 }
 li {
   color: var(--farve2);
+}
+li::marker {
+  margin-right: 30px;
+  color: #a09e9f;
+}
+h1 {
+  font-weight: lighter;
 }
 
 h3,
 h2 {
   color: #a09e9f;
+  font-weight: lighter;
 }
 
 .lyt {
@@ -27,6 +45,7 @@ h2 {
   padding-left: 3rem;
   padding-right: 3rem;
   border-radius: 7px;
+  max-width: 200px;
 }
 
 .tilbage {
@@ -40,4 +59,40 @@ h2 {
 i {
   color: var(--farve2);
   font-size: 20px;
+}
+
+img {
+  max-width: 250px;
+}
+
+.hr-line {
+  border-top: 0.5px solid #a09e9f; /* Optional: Change the color and style of the line */
+}
+
+@media (max-width: 600px) {
+  main {
+    max-width: 250px;
+    margin: auto;
+  }
+}
+
+@media (min-width: 600px) {
+  .albumgrid {
+    display: grid;
+    grid-template-columns: 200px auto;
+    gap: 1rem;
+  }
+  .flexy {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  h1 {
+    font-size: 50px;
+    margin-top: 5px;
+  }
+  h3 {
+    font-size: 20px;
+    margin-bottom: 50px;
+  }
 }
