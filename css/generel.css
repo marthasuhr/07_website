@@ -32,6 +32,7 @@ html {
   --farve2: #ffffff;
   --knapfarve: #ad4c38;
   --lighter: #2c292a;
+  --light: #a09e9f;
 }
 
 /***** GENEREL *****/
@@ -69,6 +70,12 @@ main {
 
 .footer_color {
   color: white;
+}
+
+body {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
 }
 
 /***** BURGERMENU *****/
