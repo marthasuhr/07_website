@@ -39,6 +39,22 @@ p {
   background-color: #514e4f;
 }
 
+.genrer {
+  display: flex;
+}
+
+.view_knap {
+  background-color: #514e4f;
+  font-family: "quicksand", sans-serif;
+  color: #ffffff;
+  font-size: 1.2rem;
+  padding: 0.5rem;
+  margin-top: 2rem;
+  border: none;
+  border-radius: 0.5rem;
+  margin-bottom: 2rem;
+}
+
 @media (min-width: 800px) {
   main {
     margin-inline: 250px;
