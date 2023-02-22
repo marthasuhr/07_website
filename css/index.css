@@ -1,6 +1,6 @@
 #cable {
   margin: auto;
-  margin-top: 10rem;
+  margin-top: 7rem;
   max-width: 80%;
 }
 
@@ -18,15 +18,16 @@ img {
 }
 
 h1 {
-  margin-top: 5rem;
-  margin-left: 15.7rem;
+  margin-top: 2rem;
   margin-bottom: 2rem;
   font-weight: lighter;
+  margin-left: 1rem;
 }
 
 h2,
 h3 {
   font-weight: lighter;
+  color: #ffffff;
 }
 
 .view_knap {
@@ -34,12 +35,11 @@ h3 {
   font-family: "quicksand", sans-serif;
   color: #ffffff;
   font-size: 1.5rem;
-  margin-left: 15.7rem;
+  margin-left: 1rem;
   padding: 0.5rem;
   margin-top: 2rem;
   border: none;
   border-radius: 0.5rem;
-  margin-bottom: 5rem;
 }
 
 .view_knap:hover {
@@ -49,6 +49,10 @@ h3 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
+}
+
+a {
+  text-decoration: none;
 }
 
 .album {
@@ -72,5 +76,24 @@ h3 {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 2rem;
+  }
+
+  h1 {
+    margin-top: 5rem;
+    margin-left: 15.7rem;
+    margin-bottom: 2rem;
+    font-weight: lighter;
+  }
+
+  .view_knap {
+    background-color: #ad4c38;
+    font-family: "quicksand", sans-serif;
+    color: #ffffff;
+    font-size: 1.5rem;
+    margin-left: 15.7rem;
+    padding: 0.5rem;
+    margin-top: 2rem;
+    border: none;
+    border-radius: 0.5rem;
   }
 }

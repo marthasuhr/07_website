@@ -15,17 +15,16 @@ async function hentData() {
   vis(json);
 }
 const main = document.querySelector(".template_con");
-const template = document.querySelector("template").content;
+const template = document.querySelector("#template_dim").content;
 
 function vis(json) {
   console.log(json);
   json.forEach((album) => {
     const klon = template.cloneNode(true);
-    klon.querySelector;
     klon.querySelector("img").src = "" + album.albumcover;
     klon.querySelector("h2").textContent = album.album;
     klon.querySelector("h3").textContent = album.artist;
-
+    klon.querySelector("a").href = "album.html?id=" + album._id;
     main.appendChild(klon);
   });
 }
