@@ -21,7 +21,6 @@ function vis(json) {
   console.log(json);
   json.forEach((album) => {
     const klon = template.cloneNode(true);
-    klon.querySelector;
     klon.querySelector("img").src = "" + album.albumcover;
     klon.querySelector("h2").textContent = album.album;
     klon.querySelector("h3").textContent = album.artist;
