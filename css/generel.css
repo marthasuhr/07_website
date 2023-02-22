@@ -145,8 +145,8 @@ header a:hover {
 .bar {
   display: block;
   width: 30px;
-  height: 3px;
-  margin: 5px auto;
+  height: 1px;
+  margin: 7px auto;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   background-color: var(--farve2);
@@ -171,12 +171,12 @@ header a:hover {
 
   .nav_menu {
     position: fixed;
-    left: 0%;
+    left: -5%;
     top: -100%;
     gap: 20px;
     flex-direction: column;
     background-color: var(--lighter);
-    width: 100%;
+    width: 105%;
     text-align: center;
     transition: 0.3s;
     padding-bottom: 30px;
