@@ -3,9 +3,9 @@
 
 const urlParams = new URLSearchParams(window.location.search);
 const album = urlParams.get("album");
-const cat = urlParams.get("cat");
+const cat = urlParams.get("category");
 
-document.querySelector("h2").textContent = cat;
+document.querySelector(".category").textContent = cat;
 
 const url = `https://musicgallery-27fd.restdb.io/rest/albums?category=${cat}`;
 
