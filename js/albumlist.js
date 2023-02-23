@@ -1,11 +1,12 @@
-//https://musicgallery-27fd.restdb.io/rest/albums
+let url = "https://musicgallery-27fd.restdb.io/rest/albums";
 // og her er apikey 63efb163478852088da68404
 
 const urlParams = new URLSearchParams(window.location.search);
-const album = urlParams.get("album");
+//const album = urlParams.get("album");
 const cat = urlParams.get("category");
-
-const url = `https://musicgallery-27fd.restdb.io/rest/albums?q={"category":"${cat}"}`;
+if (cat) {
+  url = `https://musicgallery-27fd.restdb.io/rest/albums?q={"category":"${cat}"}`;
+}
 
 document.querySelector(".category").textContent = cat;
 
