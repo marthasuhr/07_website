@@ -104,6 +104,7 @@ img {
     gap: 1rem;
     margin-bottom: 2rem;
   }
+  /**sup**/
   .flexy {
     display: flex;
     flex-direction: column;
